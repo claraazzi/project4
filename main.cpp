@@ -1,3 +1,14 @@
+/**
+* Author: [Clara EL Azzi]
+* Assignment: Rise of the AI
+* Date due: 2024-11-9, 11:59pm
+* I pledge that I have completed this assignment without
+* collaborating with anyone else, in conformance with the
+* NYU School of Engineering Policies and Procedures on
+* Academic Misconduct.
+**/
+
+
 #define STB_IMAGE_IMPLEMENTATION
 #define LOG(argument) std::cout << argument << '\n'
 #define GL_GLEXT_PROTOTYPES 1
@@ -215,12 +226,12 @@ void initialise() {
     g_game_state.enemies[0] = Entity(enemy_texture_id, 1.0f, 0.7f, 0.7f, ENEMY, SPINNER, IDLE); // Spinning enemy
     g_game_state.enemies[0].set_jumping_power(0.0f);
     g_game_state.enemies[0].set_scale(glm::vec3(1.0f, 1.0f, 0.0f));
-    g_game_state.enemies[0].set_position(glm::vec3(1.0f, -1.0f, 0.0f)); // Spinner
+    g_game_state.enemies[0].set_position(glm::vec3(1.0f, -1.0f, 0.0f)); 
     
-    g_game_state.enemies[1] = Entity(enemy_texture_id, 1.0f, 1.0f, 0.7f, ENEMY, VERTICAL_MOVER, WALKING);
+    g_game_state.enemies[1] = Entity(enemy_texture_id, 1.0f, 1.0f, 0.7f, ENEMY, VERTICAL_MOVER, WALKING); //mover 
     g_game_state.enemies[1].set_jumping_power(0.0f);
 
-    g_game_state.enemies[1].set_position(glm::vec3(10.0f, 1.4f, 0.0f)); // Vertical mover
+    g_game_state.enemies[1].set_position(glm::vec3(10.0f, 1.4f, 0.0f)); 
     g_game_state.enemies[1].set_scale(glm::vec3(0.75f, 0.75f, 0.0f));
     g_game_state.enemies[2].set_scale(glm::vec3(0.75f, 0.75f, 0.0f));
     
